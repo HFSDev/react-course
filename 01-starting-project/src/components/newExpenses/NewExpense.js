@@ -6,7 +6,7 @@ const NewExpense = (props) => {
 
     return(
         <div className='new-expense'>
-            <ExpenseForm />            
+            <ExpenseForm onNewExpenseCreated={props.onNewExpenseCreated}/>            
         </div>
 
     );
