@@ -24,7 +24,7 @@ const ExpenseForm = (props) => {
         console.log(`Title[${userInput.title}], Amount[${userInput.amount}] and Date[${userInput.date}].`);
     }
 
-    const onSubmitHangler = (event) => {
+    const onSubmitHandler = (event) => {
         event.preventDefault();
 
         const formData = {
@@ -49,7 +49,7 @@ const ExpenseForm = (props) => {
     }
 
     return (
-        <form onSubmit={onSubmitHangler}>
+        <form onSubmit={onSubmitHandler}>
             <div className="new-expense__controls">
                 <div className="new-expense__control">
                     <label>Title</label>
